@@ -26,7 +26,21 @@ This repository provides a beginner-friendly yet scalable **Node.js folder struc
 - Node.js (v22+)
 - npm or yarn
 
+### 📦 Dependencies
+#### Framework
+
+#### Middleware
+- Express
 ### Installation
+- body-parser
+- cors
+- compression
+- helmet
+- morgan
+- response-time
+- connect-rid
+- multer
+
 ```bash
 git clone https://github.com/yourusername/nodejs-basic-folder-structure.git
 cd nodejs-basic-folder-structure
