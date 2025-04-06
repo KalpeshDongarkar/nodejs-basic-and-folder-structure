@@ -13,7 +13,7 @@
 ## 🧪 Getting Started
 
 ### Prerequisites
-- Node.js (v14+)
+- Node.js (v22+)
 - npm or yarn
 
 ### Installation
