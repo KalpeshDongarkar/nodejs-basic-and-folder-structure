@@ -28,10 +28,8 @@ This repository provides a beginner-friendly yet scalable **Node.js folder struc
 
 ### 📦 Dependencies
 #### Framework
-
-#### Middleware
 - Express
-### Installation
+#### Middleware
 - body-parser
 - cors
 - compression
