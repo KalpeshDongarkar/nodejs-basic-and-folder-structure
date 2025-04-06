@@ -2,8 +2,6 @@
 
 > A clean and scalable Node.js project structure for building RESTful APIs with best practices.
 
-![Node.js Banner](https://nodejs.org/static/images/logos/nodejs-new-pantone-black.svg)
-
 ## 🚀 About the Project
 This repository provides a beginner-friendly yet scalable **Node.js folder structure** for building backend applications. It's ideal for developers looking to **kickstart a REST API project** using **Express.js**, following **industry best practices** for maintainability and clarity.
 
@@ -15,7 +13,7 @@ This repository provides a beginner-friendly yet scalable **Node.js folder struc
 
 ## 📌 Features
 - ✅ Clean & modular directory structure  
-- ✅ Middleware, Routes, Controllers separation  
+- ✅ Middleware, Routes
 - ✅ Easy to extend for real-world apps  
 - ✅ .env-based configuration  
 - ✅ Ready for production setup
