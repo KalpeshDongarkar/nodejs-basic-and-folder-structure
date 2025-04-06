@@ -1,4 +1,4 @@
-# Node.js Basic Folder Structure
+# Node.js Basic Folder Structure - Javascript
 
 > A clean and scalable Node.js project structure for building RESTful APIs with best practices.
 
