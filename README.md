@@ -40,6 +40,6 @@ This repository provides a beginner-friendly yet scalable **Node.js folder struc
 - multer
 
 ```bash
-git clone https://github.com/yourusername/nodejs-basic-folder-structure.git
-cd nodejs-basic-folder-structure
+git clone https://github.com/yourusername/nodejs-basic-and-folder-structure.git
+cd nodejs-basic-and-folder-structure
 npm install
