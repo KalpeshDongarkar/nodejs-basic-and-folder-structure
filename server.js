@@ -1,15 +1,15 @@
-// AS PER EXPRESS DOCUMENTATION THS IS THE EASIEST WAY TO IMPLEMENT A BASIC NODE API - Reference code like - https://expressjs.com/ - Point No. 1
-const express = require('express')
-const app = express()
-const port = 1000
+// // AS PER EXPRESS DOCUMENTATION THS IS THE EASIEST WAY TO IMPLEMENT A BASIC NODE API - Reference code like - https://expressjs.com/ - Point No. 1
+// const express = require('express')
+// const app = express()
+// const port = 1000
 
-app.get('/', (req, res) => {
-    res.send('Hello World!')
-})
+// app.get('/', (req, res) => {
+//     res.send('Hello World!')
+// })
 
-app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
-})
+// app.listen(port, () => {
+//     console.log(`Example app listening on port ${port}`)
+// })
 
 
 //NOW ADD REQUIRED DEPENDENCY (MIDDLEWARES) TO IT WHICH IS MANDATORY WHILE WORKING IN PRODUCTION LEVEL DEVELOPMENT ENVIRONMENT - Description mentioned in Readme file at Point No. 2
@@ -37,7 +37,7 @@ app1.use(express.json()); // TO PARSE application/json - EXPRESS PROVIDE INBUILD
 app1.use(express.urlencoded({ extended: true })); // TO PARSE application/x-www-form-urlencoded - EXPRESS PROVIDE INBUILD PARSER IN THE LATEST VERISON OF IT.
 
 app1.use(crid()); // APPEARS SOMETHING LIKE THIS: X-RID: 98a7sda8-808a-da27-8au7-asd7a8s6d02a - Middleware
-app1.use(crid({ headerName: 'X-Request-ID'})); // CUSTUM HEADER NAME APPEARS SOMETHING LIKE THIS: X-Request-ID: 98a7sda8-808a-da27-8au7-asd7a8s6d02a - Middleware
+app1.use(crid({ headerName: 'X-Request-ID' })); // CUSTUM HEADER NAME APPEARS SOMETHING LIKE THIS: X-Request-ID: 98a7sda8-808a-da27-8au7-asd7a8s6d02a - Middleware
 app1.use(responseTime()) // ADD HEADER OF REPONSE TIME SO THAT YOU CAN LOG IT FOR NODE PERFORMANCE STATS OR FOR REPONSE TIME CHECK : x-response-time - Middleware
 
 app1.get('/', (req, res) => {
@@ -47,6 +47,9 @@ app1.get('/', (req, res) => {
 app1.get('/cors-example/', cors(), (req, res) => { // FOR A PARTICULAR ROUTE
     res.send('Hello Cors!')
 })
+
+require('./main-app/routes/auth.routes')(app1)
+require('./main-app/routes/othrModule.routes')(app1)
 
 app1.listen(port2, () => {
     console.log(`Example app listening on port ${port2}`)
