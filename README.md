@@ -38,6 +38,10 @@ This repository provides a beginner-friendly yet scalable **Node.js folder struc
 - response-time
 - connect-rid
 - multer
+#### Database
+- redis
+- mysql
+- mongodb
 
 ```bash
 git clone https://github.com/yourusername/nodejs-basic-and-folder-structure.git
